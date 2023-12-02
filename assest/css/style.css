@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.bgOrange {
+    background-color: #F5890D;
+}
+
+.text-orange {
+    color: #EA512E;
+}
+
+.text-black1 {
+    color: #1B0238;
+}
+
+.text-silver {
+    color: #6B6B84;
+}
+
+.text-skin {
+    background-color: #FDF6ED;
+}
+
+.bg-orange {
+    background: #EA512E;
+}
+
+.bg-yellow {
+    background: #f5890d !important;
+}
+
+.mt-10 {
+    margin-top: 100px;
+}
+
+.mt-12 {
+    margin-top: 120px;
+}
+
+.mt-15 {
+    margin-top: 150px;
+}
+
+.mt-20 {
+    margin-top: 200px;
+}
+
+.mt-24 {
+    margin-top: 240px;
+}
+
+.mb-6 {
+    margin-bottom: 60px;
+}
+
+.mb-7 {
+    margin-bottom: 70px;
+}
+
+.mx-6 {
+    margin-left: 110px;
+}
+.pb-70{padding-bottom: 70px;}
+.pt-100{padding-top: 100px;}
+.pb-100{padding-bottom: 100px;}
+
+
+.btn1 {
+    background: #EA512E;
+    width: 140px;
+    height: 45px !important;
+    font-weight: 16px;
+    position: relative;
+    font-size: 16px !important;
+    font-weight: 500;
+    border-radius: 10px !important;
+    padding: 12px 35px;
+    z-index: 1;
+}
+
+.btn1:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    transform: scaleY(0);
+    transform-origin: top center;
+    background: #F5890D;
+    z-index: -1;
+    transition: transform 0.7s;
+}
+
+.btn1:hover::after {
+    background: #F5890D;
+    position: absolute;
+    transform: scaleY(1);
+}
+
+.btn1:hover {
+    background-color: #EA512E;
+}
+
+
+.bgOrange1 {
+    background-color: #EA512E;
+    position: relative;
+}
+
+.bgOrange1:hover {
+    background-color: #F5890D;
+}
+
+/* Banner Section start */
+.banner {
+    width: 100%;
+    height: 700px;
+    background: url(../img/main-banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.shape-1 {
+    top: 4%;
+    animation: moving infinite 2s linear alternate;
+
+}
+
+.shape-2 {
+    top: 4%;
+    left: 40%;
+    animation: moving2 infinite 2s linear alternate;
+}
+
+.shape-3 {
+    top: 60%;
+    z-index: 1;
+    animation: moving infinite 2s linear alternate;
+}
+
+.shape-4 {
+    top: 80%;
+    right: 42%;
+    animation: moving4 infinite 2s linear alternate;
+    z-index: 1;
+}
+
+.cloud {
+    top: 80%;
+    background-size: cover;
+}
+
+.heading1 {
+    top: 29%;
+}
+
+/* Kindergarten Section Start */
+.who-we-are-content span,
+.popular-class span,
+.Childcare span,
+.meet span {
+    font-size: 20px;
+    color: #ea512e;
+    font-weight: 600;
+    font-family: "Sacramento", cursive;
+    font-size: 16px;
+}
+
+h4,.meet h3 {
+    color: #1b0238;
+    font-family: Catamaran;
+    font-weight: 600;
+
+}
+.Kindergarten .boy-img::before{
+    position: absolute; 
+    content: "";
+    background-color: #EA512E;
+    top: 5px;
+    width: 600px;
+    height: 600px;  
+    border-radius: 50%;
+    z-index: -1;
+    animation: move-circle 5s linear infinite alternate forwards;
+}
+.Kindergarten .boy-img img{
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    width: 600px;
+    height: 600px;
+    padding: 20px;
+    border-radius: 50%;
+    
+}
+.Kindergarten .boy-img::after{
+    position: absolute; 
+    content: "";
+    background-color: #F5890D;
+    top: 5px;
+    width: 600px;
+    height: 600px;  
+    border-radius: 50%;
+    z-index: -1;
+    animation: move-circle 10s linear infinite alternate forwards;
+}
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #6b6b84;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.who-we-are-content li span {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: #ea512e;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 2px;
+    margin-right: 6px;
+    font-weight: bold;
+    border-radius: 50%;
+    font-size: 18px;
+    font-family: "Catamaran", sans-serif;
+}
+
+.who-we-are-content li {
+    color: #1B0238;
+    font-weight: 500;
+}
+
+.Kindergarten .shape-5 {
+    right: 6%;
+    z-index: 1;
+    animation: moving3 infinite 2s linear alternate;
+}
+
+/* .who-we-are-image::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #ea512e;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-animation: border-transform-default 10s linear infinite alternate forwards;
+    animation: border-transform-default 10s linear infinite alternate forwards;
+} */
+/* Kindergarten Section End */
+
+/*  Popular Section Star */
+hr {
+    border: 01px dotted #ea512e;
+
+
+}
+
+.span1 {
+    color: #EA512E !important;
+    font-family: "Roboto", sans-serif !important;
+    font-size: 15px;
+    font-weight: 500 !important;
+}
+
+.popular-class ul {
+    border-top: 2px dotted #ea512e;
+    padding-top: 5%;
+}
+
+.box {
+    position: absolute;
+    width: 15%;
+    height: 5%;
+    top: 44.7%;
+    right: 0%;
+    border-bottom-left-radius: 25%;
+    background-color: #EA512E
+}
+
+.popular-class .clip {
+    position: absolute;
+    top: 81%;
+}
+
+.popular-class .clip .secclip {
+    position: absolute;
+    left: 357%;
+    bottom: 0%;
+}
+
+
+.popular-class .card .card-img-top {
+    transition: all 0.5s ease-in-out;
+
+}
+
+.popular-class .card .card-title {
+    transition: all 0.5s ease-in-out;
+}
+
+.popular-class .card .box {
+    transition: all 0.5s ease-in-out;
+}
+
+.popular-class .card:hover .card-img-top {
+    transform: scale(1.2) rotate(3deg);
+
+}
+
+.popular-class .card:hover .card-title {
+    color: #ea512e;
+}
+
+.popular-class .card:hover .box {
+    background-color: #F5890D !important;
+}
+
+/*  Popular Section End */
+
+/* Childcare Section Start */
+.Childcare .vshape1 {
+    position: absolute;
+    top: -12%;
+    left: 1.2%;
+}
+
+.Childcare .vshape2 {
+    position: absolute;
+    top: 79%;
+    left: 1.2%;
+}
+
+.Childcare .vshape3 {
+    position: absolute;
+    top: 1%;
+    right: 0%;
+    z-index: 1;
+}
+
+.Childcare .number {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    color: #000000;
+    border: 3px solid #fff;
+    outline: 1px solid #d3f5fe;
+    line-height: 24px;
+    font-size: 25px;
+    font-family: "Catamaran", sans-serif;
+    transition: all 1s;
+
+}
+
+.Childcare .number:hover {
+    background-color: #EA512E !important;
+    color: #fff;
+    border: 3px solid #fff;
+    outline: 1px solid #EA512E;
+}
+
+/* Childcare Section End */
+
+
+/* Meet Section Start */
+.meet {
+    width: 100%;
+    height: auto;
+    background: url(../img/meetbg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    
+}
+
+.meet .social {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: -80px;
+    margin-right: 5px;
+    transition: all 0.5s ease-in;
+    z-index: 3;
+}
+
+.meet .teacher:hover .social {
+    position: absolute;
+    margin-bottom: 10px;
+    transition: 0.5s ease 0s;
+   
+    
+}
+.meet .design::before{
+    position: absolute; 
+    content: " ";
+    width: 350px;
+    height: 350px;
+    background-color: #EA512E;
+    border-radius: 50%;
+    z-index: 1 !important;
+    animation: move-circle 20s linear infinite alternate forwards;
+}
+.meet  img{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    
+    z-index: 2 !important;
+}
+
+.meet .social ul li {
+    width: 30px;
+    height: 30px;
+    background-color: #EA512E;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.meet .social ul li a {
+    color: #fff;
+    line-height: 30px;
+}
+
+/* Meet Section End */
+
+
+@keyframes moving {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 1.5%;
+    }
+}
+
+@keyframes moving2 {
+    from {
+        left: 40%;
+    }
+
+    to {
+        left: 43%;
+    }
+}
+
+@keyframes moving3 {
+    from {
+        left: 85%;
+    }
+
+    to {
+        left: 88%;
+    }
+}
+
+@keyframes moving4 {
+    from {
+        top: 80%;
+
+    }
+
+    to {
+        top: 83%;
+    }
+}
+
+@keyframes move-circle {
+    0%, 100% {
+        border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+    }
+    14% {    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+    }
+    28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+}
+42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+}
+56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+}
+70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+}
+84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+}
+}
+/*  Banner Section End */
