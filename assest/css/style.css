@@ -12,6 +12,10 @@
     background-color: #F5890D;
 }
 
+.ff {
+    font-family: "Catamaran", sans-serif;
+}
+
 .text-orange {
     color: #EA512E;
 }
@@ -32,12 +36,26 @@
     background: #EA512E;
 }
 
+.bg-nskin {
+    background-color: #FDEEE9;
+}
+
+.text-orange {
+    color: #EA512E;
+}
+
 .bg-yellow {
     background: #f5890d !important;
 }
 
+.bg-skin {
+    background-color: #FEE9CA;
+}
+.bg-blue{
+    background-color: #091629;
+}
 .mt-10 {
-    margin-top: 100px;
+    margin-top: 100px !important;
 }
 
 .mt-12 {
@@ -64,13 +82,31 @@
     margin-bottom: 70px;
 }
 
+.mx-7 {
+    margin-left: 100px;
+}
+
 .mx-6 {
     margin-left: 110px;
 }
-.pb-70{padding-bottom: 70px;}
-.pt-100{padding-top: 100px;}
-.pb-100{padding-bottom: 100px;}
+.pb-50 {
+    padding-bottom: 50px;
+}
+.pb-70 {
+    padding-bottom: 70px;
+}
 
+.pt-100 {
+    padding-top: 100px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.py-6 {
+    padding-top: 100px;
+}
 
 .btn1 {
     background: #EA512E;
@@ -123,7 +159,7 @@
 /* Banner Section start */
 .banner {
     width: 100%;
-    height: 700px;
+    height: auto;
     background: url(../img/main-banner-bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -145,7 +181,7 @@
 
 .shape-3 {
     top: 60%;
-    z-index: 1;
+    z-index: 99;
     animation: moving infinite 2s linear alternate;
 }
 
@@ -165,11 +201,17 @@
     top: 29%;
 }
 
+/*  Banner Section End */
+
+
 /* Kindergarten Section Start */
 .who-we-are-content span,
 .popular-class span,
 .Childcare span,
-.meet span {
+.meet span,
+.testimonial span,
+.event span,
+.news span {
     font-size: 20px;
     color: #ea512e;
     font-weight: 600;
@@ -177,44 +219,50 @@
     font-size: 16px;
 }
 
-h4,.meet h3 {
+h4,
+.meet h3 {
     color: #1b0238;
     font-family: Catamaran;
     font-weight: 600;
 
 }
-.Kindergarten .boy-img::before{
-    position: absolute; 
+
+.boy-img::before {
+    position: absolute;
     content: "";
     background-color: #EA512E;
-    top: 5px;
-    width: 600px;
-    height: 600px;  
+   
+    width: 100%;
+   height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
     border-radius: 50%;
     z-index: -1;
     animation: move-circle 10s linear infinite alternate forwards;
 }
-.Kindergarten .boy-img img{
-    position: absolute;
-    top: 5px;
-    bottom: 0;
-    width: 600px;
-    height: 600px;
-    padding: 20px;
-    border-radius: 50%;
-    
+
+.boy-img img {
+    padding: 15px;
+    z-index: 1;
+  
+
 }
-.Kindergarten .boy-img::after{
-    position: absolute; 
+
+.Kindergarten .boy-img::after {
+    position: absolute;
     content: "";
     background-color: #F5890D;
-    top: 5px;
-    width: 600px;
-    height: 600px;  
+    top: 0;
+    left: 0;
+    right: 0;
+    width:  100%;
+    height: 100%;
     border-radius: 50%;
     z-index: -1;
     animation: move-circle 20s linear infinite alternate forwards;
 }
+
 p {
     margin-bottom: 15px;
     line-height: 1.8;
@@ -223,8 +271,12 @@ p {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
 }
-
+.who--we{
+    position: absolute;
+    
+}
 .who-we-are-content li span {
+    
     width: 30px;
     height: 30px;
     display: inline-block;
@@ -250,32 +302,16 @@ p {
     animation: moving3 infinite 2s linear alternate;
 }
 
-/* .who-we-are-image::before {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    background-color: #ea512e;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: -1;
-    border-radius: 50%;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    -webkit-animation: border-transform-default 10s linear infinite alternate forwards;
-    animation: border-transform-default 10s linear infinite alternate forwards;
-} */
 /* Kindergarten Section End */
 
-/*  Popular Section Star */
-hr {
-    border: 01px dotted #ea512e;
+/*  Popular Section Start */
 
-
+.popular-class {
+    transition: all 0.5s ease-in-out;
 }
 
-.span1 {
+span1,
+.news span1 {
     color: #EA512E !important;
     font-family: "Roboto", sans-serif !important;
     font-size: 15px;
@@ -285,29 +321,8 @@ hr {
 .popular-class ul {
     border-top: 2px dotted #ea512e;
     padding-top: 5%;
+    font-family: sans-serif !important;
 }
-
-.box {
-    position: absolute;
-    width: 15%;
-    height: 5%;
-    top: 44.7%;
-    right: 0%;
-    border-bottom-left-radius: 25%;
-    background-color: #EA512E
-}
-
-.popular-class .clip {
-    position: absolute;
-    top: 81%;
-}
-
-.popular-class .clip .secclip {
-    position: absolute;
-    left: 357%;
-    bottom: 0%;
-}
-
 
 .popular-class .card .card-img-top {
     transition: all 0.5s ease-in-out;
@@ -318,9 +333,7 @@ hr {
     transition: all 0.5s ease-in-out;
 }
 
-.popular-class .card .box {
-    transition: all 0.5s ease-in-out;
-}
+
 
 .popular-class .card:hover .card-img-top {
     transform: scale(1.2) rotate(3deg);
@@ -331,8 +344,13 @@ hr {
     color: #ea512e;
 }
 
-.popular-class .card:hover .box {
+.popular-class .card .phover {
+    transition: all 0.5s ease-in-out;
+}
+
+.popular-class .card:hover .phover {
     background-color: #F5890D !important;
+    transition: all 0.5s ease-in-out;
 }
 
 /*  Popular Section End */
@@ -388,9 +406,9 @@ hr {
     background: url(../img/meetbg.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: center;
     z-index: -1;
-    
+
 }
 
 .meet .social {
@@ -408,23 +426,26 @@ hr {
     position: absolute;
     margin-bottom: 10px;
     transition: 0.5s ease 0s;
-   
-    
+
+
 }
-.meet .design::before{
-    position: absolute; 
+
+.meet .design::before {
+    position: absolute;
     content: " ";
-    width: 350px;
-    height: 350px;
+    width: 330px;
+    height: 330px;
     background-color: #EA512E;
     border-radius: 50%;
+    
     z-index: 1 !important;
     animation: move-circle 20s linear infinite alternate forwards;
 }
-.meet  img{
+
+.meet img {
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 330px;
+    height: 330px;
     border-radius: 50%;
     
     z-index: 2 !important;
@@ -445,6 +466,250 @@ hr {
 
 /* Meet Section End */
 
+/* Testimonials Section Start */
+.testimonial .card:hover .quote  {
+    background: #ea512e !important;
+    color: #fff !important;
+}
+.card{
+    background: #fee9ca
+}
+.quote{
+    color: #ea512e;
+    background: #fff;
+    padding: 6px 17px 6px 14px;
+    transition: 0.3s ease;}
+.pt{
+    line-height: 25px;
+    color: #6b6b84;
+    font-weight: 400;
+    font-size: 15px;
+}
+.text-fa{
+    font-family: 'Roboto',sans-serif,FontAwesome;
+}
+.testimonial p{
+    margin-bottom: 0px;
+}
+.prev,.next{
+    opacity:0;
+    transition:opacity 1000ms;
+}
+
+.nextbtn{
+    color: white;
+    background: #ea512e;
+    border-radius: 50%;
+    transition: 0.3s;}
+.testimonial .row>*{
+    padding-left: 0px;
+}
+.prev:hover{
+    background: #ff9a27 !important;
+}
+.next:hover{
+    background: #ff9a27 !important;
+}
+.slider-main{
+    transition: 0.6s;
+}
+
+.testimonial
+:hover .prev{
+    opacity: 1;
+}
+.testimonial:hover .next{
+    opacity: 1;
+} 
+/* Testimonials Section End
+
+/* Events Section Start */
+.event {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/event-bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: auto;
+}
+
+.event h1 {
+    font-size: 80px;
+    color: #ea512e;
+    margin-bottom: 0;
+    font-family: "Catamaran", sans-serif;
+    font-weight: bold;
+}
+
+.event .sfs {
+    font-size: 25px;
+}
+
+/* Events Section End */
+
+/* News Section start */
+.news ul li {
+    font-family: "Catamaran", sans-serif;
+
+}
+.news .card{
+    border-radius: 10px;
+}
+
+.news .card .card-img-top {
+    transition: all 0.5s ease-in-out;
+
+}
+
+.news .card .card-title {
+    transition: all 0.5s ease-in-out;
+}
+
+.news .card:hover .card-img-top {
+    transform: scale(1.2) rotate(3deg);
+    
+}
+
+.news .card:hover .card-title {
+    color: #ea512e;
+}
+
+.news .card .phover {
+    transition: all 0.5s ease-in-out;
+}
+
+.news .card:hover .phover {
+    background-color: #F5890D !important;
+    transition: all 0.5s ease-in-out;
+}
+
+/* News section End */
+
+/* Footer Section Start */
+.footer {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)),url(../img/footer-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.footer .social ul li {
+    width: 35px;
+    height: 35px;
+    background-color: #EA512E;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 2px;
+    margin-right: 10px;
+    transition: 0.3s ease;
+}
+
+.footer .social ul li a{
+    color: #fff ;
+    line-height: 30px;
+    
+}
+.footer .social ul li:hover{
+    background-color: #F5890D ;
+}
+.footer .up{
+    transition: 0.3s ease;
+}
+.footer .up:hover{
+    transform: translateY(-4px);
+    transition:  0.3s ease  ;
+}
+.footer h4{
+    font-size: 25px;
+    position: relative;
+    color: #ffffff;
+    font-family: "Catamaran", sans-serif;
+    font-weight: bold;
+}
+.footer hr{
+     width: 50px;
+     border: 1px solid #ea512e;
+     color: #ea512e;
+     opacity: 1;
+}
+.footer ul li h6{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.uline{
+    font-size: 15px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.uline:hover{
+    color: #ea512e;
+    cursor: pointer;
+}
+.uline:hover::before{
+    width: 100%;
+}
+.uline::before{
+    content: "";
+    position: absolute;
+    left:0;
+    bottom: 0;
+    height: 1px;
+    width: 0px;
+    background: #ea512e;
+    transition: 0.5s ease;
+}
+.photo ul li img{
+    width:  100px;
+    height: 100px;
+}
+.footer .gallery{
+    
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+   gap: 10px;
+}
+
+.img{
+    position: relative;
+
+}
+.footer .image img{
+    width: 100%;
+    height: 100%;
+    
+}
+.img-h{
+    transition: 0.6s all ease;
+}
+.img:hover .img-h{
+    transform: scale(1.1)
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    background-color: red;
+    transition: 0.6s all ease;
+}
+
+.overlay:hover{
+    opacity: 0.4;
+    transition: 0.6s all ease;
+    
+}
+
+/* Footer Section End */
 
 @keyframes moving {
     from {
@@ -488,25 +753,72 @@ hr {
 }
 
 @keyframes move-circle {
-    0%, 100% {
+
+    0%,
+    100% {
         border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
     }
-    14% {    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+
+    14% {
+        border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
     }
+
     28% {
-    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+
+        border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+    }
+
+    42% {
+        border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+    }
+
+    56% {
+        border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+    }
+
+    70% {
+        border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+    }
+
+    84% {
+        border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+    }
 }
-42% {
-    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+
+
+
+/* Responsive start */
+@media screen and (max-width:991px) {
+
 }
-56% {
-    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+
+@media screen and (max-width:767px) {
+    .mt-15{
+        margin-top: 40px;
+      }
+      
 }
-70% {
-    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+
+@media screen and (max-width:414px) {
+
+    .event .fs-md {
+        font-size: 40px;
+    }
+    .mt-15{
+        margin-top: 40px;
+      }  
+      .Kindergarten .mt-10{
+        margin-top: 5px;
+      }
+
 }
-84% {
-    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+
+
+
+@media screen and (max-width:316px) {
+  .mt-15{
+    margin-top: 40px;
+  }  
+
+
 }
-}
-/*  Banner Section End */

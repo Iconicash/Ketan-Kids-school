@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="./assest/css/style.css">
 </head>
 
@@ -146,32 +148,32 @@
 
     <!-- Banner Section start -->
 
-    <section class="banner position-relative">
-        <div class="container-flude  ">
+    <section class="banner position-relative pb-100">
+        <div class="container-flude ">
             <div class="row">
-                <div class=" col-lg-1 mx-4  position-absolute shape-1">
+                <div class=" col-lg-1 mx-4  position-absolute shape-1 d-none d-lg-block">
                     <img class="img-fluid" src="./assest/img/banner-shape-1.png" alt="">
                 </div>
-                <div class=" col-lg-1 mx-4 position-absolute shape-2">
+                <div class=" col-lg-1 mx-4 position-absolute shape-2 d-none d-lg-block">
                     <img class="img-fluid" src="./assest/img/banner-shape-2.png" alt="">
                 </div>
-                <div class=" col-lg-1 mx-4 position-absolute shape-3">
+                <div class=" col-lg-1 mx-4 position-absolute shape-3 d-none d-lg-block ">
                     <img class="img-fluid" src="./assest/img/banner-shape-3.png" alt="">
                 </div>
-                <div class=" col-lg-1 mx-4 position-absolute shape-4">
+                <div class=" col-lg-1 mx-4 position-absolute shape-4 d-none d-lg-block">
                     <img class="img-fluid" src="./assest/img/banner-shape-4.png" alt="">
                 </div>
-                <div class=" col-lg-12 mx-2 mt-4 position-absolute cloud ">
+                <div class=" col-lg-12 mx-2 mt-4 position-absolute cloud d-none d-lg-block ">
                     <img class="img-fluid" src="./assest/img/banner-bg-shape-1.png" alt="">
                 </div>
             </div>
         </div>
 
-        <div class="container ">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h6 class="heading1 position-absolute text-orange">Play, Learn and Grow</h6>
-                    <h4 class="display-4 mt-24 text-black1 fw-bold">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6 text-center text-lg-start mt-15 ">
+                    <h6 class="heading1 text-orange text-center text-lg-start">Play, Learn and Grow</h6>
+                    <h4 class="display-4 text-black1 fw-bold">
                         Empowering Student Knowledge
                     </h4>
                     <p>
@@ -189,7 +191,8 @@
 
                 <div class="col-lg-6">
                     <div class="mt-5">
-                        <img src="./assest/img/education-girl.png" alt="" class="img-fluid">
+                        <img src="./assest/img/education-girl.png" class="img-fluid" width="660px"
+                            style="float:inline-end !important;">
                     </div>
 
                 </div>
@@ -201,47 +204,50 @@
     <!-- Banner Section End -->
 
     <!-- Kindergarten Section Start -->
-    <section class="Kindergarten mb-5 mt-4 position-relative">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-1 mx-4   position-absolute shape-5">
+    <section class="Kindergarten mb-5">
+        <div class="container position-relative ">
+            <div class="row ">
+                <div class="col-lg-1 mx-4  position-absolute shape-5 d-none d-lg-block">
                     <img class="img-fluid" src="./assest/img/who-we-are-shape.png" alt="">
                 </div>
-                <div class="boy-img col-lg-6">
-                  <img src="./assest/img/footer-gallery-3.jpg" alt="">
-                    
-                </div>
-
-                <div class="col-lg-6 mt-10">
-                    <div class="who-we-are-content">
-                        <span class="fs-5">Who We Are</span>
-                        <h4 class="display-5 fw-bold mt-3 mb-3">Kindergarten and Childhood is Our Passion</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravidagna aliqua. Quis ipsum
-                            suspendisse ultrices gravida. Risus commodo
-                            viverra maecenas accumsan lacus vel facilisis.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
-
-                        <ul class=" row list-unstyled g-3 ">
-                            <li class="col-6">
-                                <span>1</span>
-                                Homelike Environment
-                            </li>
-                            <li class="col-6">
-                                <span>2</span>
-                                Quality Educators
-                            </li>
-                            <li class="col-6">
-                                <span>3</span>
-                                Safety and Security
-                            </li>
-                            <li class="col-6">
-                                <span>4</span>
-                                Play to Learn
-                            </li>
-                        </ul>
-                        <button class="btn btn1 text-white p-0">Read More</button>
+                <div class="row pt-100">
+                    <div class="col-lg-6 position-relative  ">
+                        <div class="boy-img ">
+                            <img src="./assest/img/footer-gallery-3.jpg" width="100%" alt=""  style="border-radius: 50%;">
+    
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-10 ">
+                        <div class="who-we-are-content">
+                            <span class="fs-5">Who We Are</span>
+                            <h4 class="display-5 fw-bold mt-3 mb-3">Kindergarten and Childhood is Our Passion</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravidagna aliqua. Quis ipsum
+                                suspendisse ultrices gravida. Risus commodo
+                                viverra maecenas accumsan lacus vel facilisis.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua.</p>
+    
+                            <ul class=" row list-unstyled g-3 ">
+                                <li class="col-lg-6 col-12 ">
+                                    <span>1</span>
+                                    Homelike Environment
+                                </li>
+                                <li class="col-lg-6 col-12 ">
+                                    <span>2</span>
+                                    Quality Educators
+                                </li>
+                                <li class="col-lg-6 col-12 ">
+                                    <span>3</span>
+                                    Safety and Security
+                                </li>
+                                <li class="col-lg-6 col-12 ">
+                                    <span>4</span>
+                                    Play to Learn
+                                </li>
+                            </ul>
+                            <button class="btn btn1 text-white p-0">Read More</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -250,85 +256,97 @@
     <!-- Kindergarten Section End -->
 
     <!-- Popular Section Start -->
-    <section class="popular-class text-skin mt-10 position-relative">
-        <div class="clip ">
-            <img class="img-fluid h-25" src="./assest/img/class-shape-1.png" alt="">
-            <img class="secclip img-fluid" src="./assest/img/class-shape-2.png" alt="">
-        </div>
+    <section class="popular-class text-skin mt-10 position-relative  pt-100 pb-100">
+        <img class="position-absolute bottom-0 d-none d-lg-block " src="./assest/img/class-shape-1.png" alt="">
+        <img class="position-absolute bottom-0 end-0 d-none d-lg-block " src="./assest/img/class-shape-2.png" alt="">
+
+
+
         <div class="container">
             <div class="row">
-                <span class="fs-5 text-center mt-10">Classes</span>
+                <span class="fs-5 col-lg-12 text-center mt-10">Classes</span>
                 <h4 class="display-5 text-center fw-bold mt-3">Popular Classes</h4>
+            </div>
 
-                <div class="d-flex mt-5 w-100 gap-4 col-lg-4 col-12 mx-auto col-md-6 mb-5 ">
 
-                    <div class="card mb-5" style="width: 50rem;">
+            <div class="row">
+                <div class="col-lg-4 g-3 position-relative">
+                    <div class="card overflow-hidden bg-white ">
                         <div class="overflow-hidden">
                             <img src="./assest/img/class-1.jpg" class="card-img-top" alt="...">
                         </div>
+                        <p class="ms-auto bg-orange text-white phover p-2 px-3 " style="border-radius: 0 0 0 10px;">$880
+                        </p>
                         <div class="card-body">
-                            <div class="box ">
-                                <p class="  text-white text-center mt-1 fw-bold">$880</p>
-                            </div>
-                            <h5 class="card-title fw-bold p-2 mt-5 fs-5">Color Matching</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing m ipsum dolor sit
-                                amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua.</p>
-                            <ul class="list-unstyled d-flex gap-2">
-                                <li><span class="span1">Age:</span> 3-5 Year</li>
-                                <li><span class="span1">Time:</span> 8-10 AM</li>
-                                <li><span class="span1">Seat:</span> 25</li>
+                            <h5 class="card-title fw-bold h3">Color Matching</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <ul class="list-unstyled d-flex">
+                                <li class="mx-2 fw-bold">
+                                    <span1 class="fw-bold">Age: </span1>3-5 Year
+                                </li>
+                                <li class="mx-2 fw-bold">
+                                    <span1 class="fw-bold">Time: </span1>8-10 AM
+                                </li>
+                                <li class="mx-2 fw-bold">
+                                    <span1 class="fw-bold">Seat: </span1>25
+                                </li>
                             </ul>
-                            <button class="btn btn1 p-0 text-white mt-1 mb-4">Join Class</button>
                         </div>
-
                     </div>
-
-                    <div class="card mb-5" style="width: 50rem;">
+                </div>
+                <div class="col-lg-4 g-3 position-relative">
+                    <div class="card overflow-hidden bg-white">
                         <div class="overflow-hidden">
                             <img src="./assest/img/class-2.jpg" class="card-img-top" alt="...">
                         </div>
+                        <p class="ms-auto bg-orange text-white phover p-2 px-3 " style="border-radius: 0 0 0 10px;">$880
+                        </p>
                         <div class="card-body">
-                            <div class="box ">
-                                <p class=" text-white text-center mt-1 fw-bold">$880</p>
-                            </div>
-                            <h5 class="card-title fw-bold p-2 mt-5 fs-5">Color Matching</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing m ipsum dolor sit
-                                amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua.</p>
-                            <ul class="list-unstyled d-flex gap-2">
-                                <li><span class="span1">Age:</span> 3-5 Year</li>
-                                <li><span class="span1">Time:</span> 8-10 AM</li>
-                                <li><span class="span1">Seat:</span> 25</li>
+                            <h5 class="card-title fw-bold h3">Color Matching</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <ul class="list-unstyled d-flex">
+                                <li class="mx-2 fw-bold">
+                                    <span1 class="fw-bold">Age: </span1>3-5 Year
+                                </li>
+                                <li class="mx-2 fw-bold">
+                                    <span1 class="fw-bold">Time: </span1>8-10 AM
+                                </li>
+                                <li class="mx-2 fw-bold">
+                                    <span1 class="fw-bold">Seat: </span1>25
+                                </li>
                             </ul>
-                            <button class="btn btn1 p-0 text-white mt-1 mb-4">Join Class</button>
                         </div>
                     </div>
-
-
-                    <div class="card mb-5" style="width: 50rem;">
+                </div>
+                <div class="col-lg-4 g-3 position-relative">
+                    <div class="card overflow-hidden bg-white">
                         <div class="overflow-hidden">
-
                             <img src="./assest/img/class-3.jpg" class="card-img-top" alt="...">
                         </div>
+                        <p class="ms-auto bg-orange text-white phover p-2 px-3 " style="border-radius: 0 0 0 10px;">$880
+                        </p>
                         <div class="card-body">
-                            <div class="box ">
-                                <p class=" text-white text-center mt-1 fw-bold">$880</p>
-                            </div>
-                            <h5 class="card-title fw-bold p-2 mt-5 fs-5">Color Matching</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing m ipsum dolor sit
-                                amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua.</p>
-                            <ul class="list-unstyled d-flex gap-2">
-                                <li><span class="span1">Age:</span> 3-5 Year</li>
-                                <li><span class="span1">Time:</span> 8-10 AM</li>
-                                <li><span class="span1">Seat:</span> 25</li>
+                            <h5 class="card-title fw-bold h3">Color Matching</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <ul class="list-unstyled d-flex">
+                                <li class="mx-2 fw-bold">
+                                    <span1 class="fw-bold">Age: </span1>3-5 Year
+                                </li>
+                                <li class="mx-2 fw-bold">
+                                    <span1 class="fw-bold">Time: </span1>8-10 AM
+                                </li>
+                                <li class="mx-2 fw-bold">
+                                    <span1 class="fw-bold">Seat: </span1>25
+                                </li>
                             </ul>
-                            <button class="btn btn1 p-0 text-white mt-1 ">Join Class</button>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <!-- Popular Section End -->
@@ -338,9 +356,9 @@
 
 
         <div class="img-fluid">
-            <img class=" vshape1" src="./assest/img/value-shape-1.png" alt="">
-            <img class=" vshape2" src="./assest/img/value-shape-2.png" alt="">
-            <img class=" vshape3" src="./assest/img/value-shape-3.png" alt="">
+            <img class=" vshape1 d-none d-lg-block" src="./assest/img/value-shape-1.png" alt="">
+            <img class=" vshape2 d-none d-lg-block" src="./assest/img/value-shape-2.png" alt="">
+            <img class=" vshape3 d-none d-lg-block" src="./assest/img/value-shape-3.png" alt="">
         </div>
 
 
@@ -415,127 +433,607 @@
                         <div class="design">
                             <img src="./assest/img/teacher-1.jpg" alt="">
                         </div>
-                       
-                   <div class="social ">
+
+                        <div class="social ">
+                            <ul class="list-unstyled">
+                                <li class="d-inline-block"><a href="">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a></li>
+                                <li class="d-inline-block"><a href="">
+                                        <i class="fa-brands fa-twitter"></i>
+
+                                    </a></li>
+                                <li class="d-inline-block" i><a href="">
+                                        <i class="fa-brands fa-instagram"></i>
+
+                                    </a></li>
+                                <li class="d-inline-block"><a href="">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h4 class="mt-5">Glims Bond</h4>
+                    <span2 class="text-orange fw-bold">Music Teacher</span2>
+                </div>
+
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="teacher overflow-hidden position-relative ">
+                        <div class="design">
+                            <img src="./assest/img/teacher-2.jpg" alt="">
+                        </div>
+                        <div class="social ">
+                            <ul class="list-unstyled">
+                                <li class="d-inline-block"><a href="">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a></li>
+                                <li class="d-inline-block"><a href="">
+                                        <i class="fa-brands fa-twitter"></i>
+
+                                    </a></li>
+                                <li class="d-inline-block" i><a href="">
+                                        <i class="fa-brands fa-instagram"></i>
+
+                                    </a></li>
+                                <li class="d-inline-block"><a href="">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h4 class="mt-5">Sherlock Bin</h4>
+                    <span2 class="text-orange fw-bold">Math Teacher</span2>
+                </div>
+
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="teacher overflow-hidden position-relative ">
+                        <div class="design">
+                            <img class="img-fluid" src="./assest/img/teacher-3.jpg" alt="">
+                        </div>
+                        <div class="social ">
+                            <ul class="list-unstyled">
+                                <li class="d-inline-block"><a href="">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a></li>
+                                <li class="d-inline-block"><a href="">
+                                        <i class="fa-brands fa-twitter"></i>
+
+                                    </a></li>
+                                <li class="d-inline-block" i><a href="">
+                                        <i class="fa-brands fa-instagram"></i>
+
+                                    </a></li>
+                                <li class="d-inline-block"><a href="">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h4 class="mt-5">Priestly Herbart</h4>
+                    <span2 class="text-orange fw-bold">English Teacher</span2>
+                </div>
+
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="teacher overflow-hidden position-relative ">
+                        <div class="design">
+                            <img src="./assest/img/teacher-4.jpg" alt="">
+                        </div>
+                        <div class="social ">
+                            <ul class="list-unstyled">
+                                <li class="d-inline-block"><a href="">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a></li>
+                                <li class="d-inline-block"><a href="">
+                                        <i class="fa-brands fa-twitter"></i>
+
+                                    </a></li>
+                                <li class="d-inline-block" i><a href="">
+                                        <i class="fa-brands fa-instagram"></i>
+
+                                    </a></li>
+                                <li class="d-inline-block"><a href="">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h4 class="mt-5">Smith Broke</h4>
+                    <span2 class="text-orange fw-bold">Art Teacher</span2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Meet Section End -->
+
+    <!-- Testimonials Section Start -->
+    <section class="testimonial pb-100 position-relative">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-12 mt-10 text-center">
+                    <span class="fs-5">Testimonials</span>
+                    <h4 class="display-5 fw-bold mt-3">What parents Say About Us</h4>
+                </div>
+                <div class="  mb-5  d-none d-lg-block">
+                    <button
+                        class="nextbtn text-fa px-3 py-1 fs-3 position-absolute top-50 start-0 prev">&#xf053;</button>
+                    <button class="nextbtn text-fa px-3 py-1 fs-3 position-absolute top-50 end-0 next">&#xf054;</button>
+                </div>
+
+                <div class=" row mt-1 text-center swiper mySwiper">
+                    <div class="swiper-wrapper d-flex">
+                        <div class="col-lg-4 col-md-6 col-12 swiper-slide ">
+                            <div class="card text-center rounded-circle px-5 py-4 border-0 mx-3">
+                                <p class="text-fa fs-3 rounded-circle d-block mx-auto fst-italic quote">&#xf10d;</p>
+                                <p class="py-3 pt"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Corporis
+                                        molestias maxime
+                                        dolorem. Eaque,
+                                        laboriosam quas officiis laudantium consequatur autem impedit provident
+                                        dolore
+                                        atque hic ipsam
+                                        similique
+                                        quod optio quasi omnis commodi et?</i></p>
+                                <p class="text-black1 fw-bold h4 ">Glims Bond</p>
+                                <p class="text-orange">Music Teacher</p>
+                            </div>
+                            <div class="birdimg text-center my-2">
+                                <img src="./assest/img/testimonials-1.png">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 swiper-slide">
+                            <div class="card text-center rounded-circle px-5 py-4 border-0 mx-3"
+                                style="background: #fee9ca;">
+                                <p class="text-fa fs-3 rounded-circle d-block mx-auto fst-italic quote"
+                                    style="color: #ea512e;background: #fff;padding: 6px 17px 6px 14px;">&#xf10d;</p>
+                                <p class="py-3 pt"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Corporis
+                                        molestias maxime
+                                        dolorem. Eaque,
+                                        laboriosam quas officiis laudantium consequatur autem impedit provident
+                                        dolore
+                                        atque hic ipsam
+                                        similique
+                                        quod optio quasi omnis commodi et?</i></p>
+                                <p class="text-black1 fw-bold h4">Sherlock Bin</p>
+                                <p class="text-orange">Art Teacher</p>
+                            </div>
+                            <div class="birdimg text-center my-3">
+                                <img src="./assest/img/testimonials-2.png">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 swiper-slide">
+                            <div class="card text-center rounded-circle px-5 py-4 border-0 mx-3"
+                                style="background: #fee9ca;">
+                                <p class="text-fa fs-3 rounded-circle d-block mx-auto fst-italic quote"
+                                    style="color: #ea512e;background: #fff;padding: 6px 17px 6px 14px;">&#xf10d;</p>
+                                <p class="py-3 pt"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Corporis molestias maxime dolorem. Eaque,laboriosam quas officiis laudantium
+                                        consequatur autem impedit provident
+                                        dolore atque hic ipsam similique quod optio quasi omnis commodi et?</i></p>
+                                <p class="text-black1 fw-bold h4">Priesty Herbart</p>
+                                <p class="text-orange">Math Teacher</p>
+                            </div>
+                            <div class="birdimg text-center my-3">
+                                <img src="./assest/img/testimonials-3.png">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 swiper-slide">
+                            <div class="col-lg-4 col-md-6 col-12 swiper-slide">
+                                <div class="card text-center rounded-circle px-5 py-4 border-0 mx-3"
+                                    style="background: #fee9ca;">
+                                    <p class="text-fa fs-3 rounded-circle d-block mx-auto fst-italic quote"
+                                        style="color: #ea512e;background: #fff;padding: 6px 17px 6px 14px;">&#xf10d;
+                                    </p>
+                                    <p class="py-3 pt"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Corporis molestias maxime
+                                            dolorem. Eaque,
+                                            laboriosam quas officiis laudantium consequatur autem impedit provident
+                                            dolore atque hic ipsam
+                                            similique
+                                            quod optio quasi omnis commodi et?</i></p>
+                                    <p class="text-black1 fw-bold h4">Smith Broke</p>
+                                    <p class="text-orange">Art Teacher</p>
+                                </div>
+                                <div class="birdimg text-center my-3">
+                                    <img src="./assest/img/testimonials-1.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </section>
+    <!-- Testimonials Section End -->
+
+    <!-- Events Section Start -->
+    <section class="event py-5  py-md-0">
+        <div class="container text-center pb-100  pt-5">
+            <div class="row gap-3">
+                <div class="text-center">
+                    <span class="display-1 text-white sfs">Event</span>
+                    <h4 class="display-5 fw-bold text-white mt-3">Upcoming Events</h4>
+                </div>
+
+                <div class="row col-lg-12  col-11 bg-white mt-lg-5 rounded-3 mx-auto ">
+                    <div class="col-md-4 text-md-start text-center p-3">
+                        <img class="img-fluid " src="./assest/img/event-1.png" alt="">
+                    </div>
+
+                    <div class="col-md-5 text-md-start my-auto text-center text-dark ">
+                        <h4 class="  fw-bold mt-3">Annual Cultural Programme</h4>
+                        <ul class="list-unstyled ">
+                            <li class="text-black1 h5 col-12 mt-3 ff"><time> <i
+                                        class="fa-regular fa-clock text-orange"></i>
+                                    8:00 AM - 10:00 PM</time></li>
+                            <li class="mt-3 h5 mx-sm-auto">
+                                <address> <i class="fa-solid fa-location-dot text-orange"></i>
+                                    New York 56 Glassford Street Glasgow</address>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3  mt-lg-5 text-center">
+                        <h1 class="display-1 fs-md">12</h1>
+                        <h3 class="text-orange">September</h3>
+                    </div>
+                </div>
+
+                <div class="row col-lg-12  col-11 bg-white mt-lg-5 rounded-3 mx-auto ">
+                    <div class="col-md-4 text-md-start text-center p-3">
+                        <img class="img-fluid " src="./assest/img/event-1.png" alt="">
+                    </div>
+                    <div class="col-md-5 text-md-start my-auto text-center text-dark ">
+                        <h4 class="  fw-bold mt-3">Annual Cultural Programme</h4>
+                        <ul class="list-unstyled ">
+                            <li class="text-black1 h5 col-12 mt-3 ff"><time> <i
+                                        class="fa-regular fa-clock text-orange"></i>
+                                    8:00 AM - 10:00 PM</time></li>
+                            <li class="mt-3 h5 mx-sm-auto">
+                                <address> <i class="fa-solid fa-location-dot text-orange"></i>
+                                    New York 56 Glassford Street Glasgow</address>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3  mt-lg-5 text-center">
+                        <h1 class="display-1 fs-md">12</h1>
+                        <h3 class="text-orange">September</h3>
+                    </div>
+                </div>
+
+                <div class="row col-lg-12  col-11 bg-white mt-lg-5 rounded-3 mx-auto">
+                    <div class="col-md-4 text-md-start text-center p-3">
+                        <img class="img-fluid " src="./assest/img/event-1.png" alt="">
+                    </div>
+                    <div class="col-md-5 text-md-start my-auto text-center text-dark ">
+                        <h4 class="  fw-bold mt-3">Annual Cultural Programme</h4>
+                        <ul class="list-unstyled ">
+                            <li class="text-black1 h5 col-12 mt-3 ff"><time> <i
+                                        class="fa-regular fa-clock text-orange"></i>
+                                    8:00 AM - 10:00 PM</time></li>
+                            <li class="mt-3 h5 mx-sm-auto">
+                                <address> <i class="fa-solid fa-location-dot text-orange"></i>
+                                    New York 56 Glassford Street Glasgow</address>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3  mt-lg-5 text-center">
+                        <h1 class="display-1 fs-md">12</h1>
+                        <h3 class="text-orange">September</h3>
+                    </div>
+                </div>
+
+                <div class="row col-lg-12  col-11 bg-white mt-lg-5 rounded-3 mx-auto">
+                    <div class="col-md-4 text-md-start text-center p-3">
+                        <img class="img-fluid " src="./assest/img/event-1.png" alt="">
+                    </div>
+                    <div class="col-md-5 text-md-start my-auto text-center text-dark ">
+                        <h4 class="  fw-bold mt-3">Annual Cultural Programme</h4>
+                        <ul class="list-unstyled ">
+                            <li class="text-black1 h5 col-12 mt-3 ff"><time> <i
+                                        class="fa-regular fa-clock text-orange"></i>
+                                    8:00 AM - 10:00 PM</time></li>
+                            <li class="mt-3 h5 mx-sm-auto">
+                                <address> <i class="fa-solid fa-location-dot text-orange"></i>
+                                    New York 56 Glassford Street Glasgow</address>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3  mt-lg-5 text-center">
+                        <h1 class="display-1 fs-md">12</h1>
+                        <h3 class="text-orange">September</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+    <!-- Events Section End -->
+
+
+    <!-- news section Start -->
+    <section class="news pb-100">
+        <div class="container">
+            <div class="row">
+                <span class="fs-5 col-lg-12 text-center mt-10">News and Blog</span>
+                <h4 class="display-5 text-center fw-bold mt-3">Latest News</h4>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-4 g-3 ">
+                    <div class="card overflow-hidden bg-nskin border-0">
+                        <div class="overflow-hidden">
+                            <img src="./assest/img/blog-1.jpg" class="card-img-top">
+                        </div>
+                        <div class="mx-3">
+                            <div class="card-body">
+                                <ul class="list-unstyled d-flex gap-2 mt-3 fw-b">
+                                    <li>
+                                        <span1>By Admin : </span1>Jack John
+                                    </li>
+                                    <li>
+                                        <span1>Date : </span1>26 Dec 2022
+                                    </li>
+
+                                </ul>
+                                <h5 class="card-title fw-bold h5">Red Green Color Blindness</h5>
+                                <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                            <button class="btn btn1 text-white px-3 mx-3 mb-5 py-2">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 g-3  ">
+                    <div class="card overflow-hidden bg-nskin border-0 ">
+                        <div class="overflow-hidden">
+                            <img src="./assest/img/blog-2.jpg" class="card-img-top">
+                        </div>
+                        <div class="mx-3">
+                            <div class="card-body">
+                                <ul class="list-unstyled d-flex gap-2 mt-3 fw-b">
+                                    <li>
+                                        <span1>By Admin : </span1>Jack John
+                                    </li>
+                                    <li>
+                                        <span1>Date : </span1>26 Dec 2022
+                                    </li>
+
+                                </ul>
+                                <h5 class="card-title fw-bold h5">Red Green Color Blindness</h5>
+                                <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                            <button class="btn btn1 text-white px-3 mx-3 mb-5 py-2">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 g-3  ">
+                    <div class="card overflow-hidden bg-nskin border-0 ">
+                        <div class="overflow-hidden">
+                            <img src="./assest/img/blog-3.jpg" class="card-img-top">
+                        </div>
+                        <div class="mx-3">
+                            <div class="card-body">
+                                <ul class="list-unstyled d-flex gap-2 mt-3 fw-b">
+                                    <li>
+                                        <span1>By Admin : </span1>Jack John
+                                    </li>
+                                    <li>
+                                        <span1>Date : </span1>26 Dec 2022
+                                    </li>
+
+                                </ul>
+                                <h5 class="card-title fw-bold h5">Red Green Color Blindness</h5>
+                                <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                            <button class="btn btn1 text-white px-3 mx-3 mb-5 py-2">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <!-- news section End -->
+
+    <!-- Footer Section Start -->
+    <section class="footer pb-100 pt-100">
+        <div class="container">
+            <div class="row">
+                <div class=" col-lg-3 col-sm-6">
+                    <h1 class="fw-bold text-white">Ketan</h1>
+                    <p class="text-white mt-4 fs-6">
+                        Lorem ipsum dolor sit amet, consectetur consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore
+                        et dolore magna aliqua.
+                    </p>
+                    <div class="social fs-6 mt-4">
+                        <ul class="list-unstyled d-flex">
+                            <li class="up"><a href="">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a></li>
+                            <li class="up"><a href="">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a></li>
+                            <li class="up"><a href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a></li>
+                            <li class="up"><a href="">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h4 class="text-white fw-medium">Contact Us</h4>
+                    <hr>
                     <ul class="list-unstyled">
-                        <li class="d-inline-block"><a href="">
-                              <i class="fa-brands fa-facebook-f"></i>
-                        </a></li>
-                        <li class="d-inline-block"><a href=""> 
-                           <i class="fa-brands fa-twitter"></i>
-  
-                        </a></li>
-                        <li class="d-inline-block"i><a href="">
-                       <i class="fa-brands fa-instagram"></i>
-  
-                        </a></li>
-                        <li class="d-inline-block"><a href="">
-                           <i class="fa-brands fa-linkedin-in"></i>
-  
-                        </a></li>
-                      </ul>
+                        <li class="text-orange"><i class="fa-solid fa-phone fs-5 pt-1"></i><span
+                                class="text-white mx-3 fs-5 fw-bold">Phone</span></li>
+                        <li class="text-white offset-1  ">
+                            <span class=" fw-light mx-2 uline">882-569-756</span>
+                        </li>
+                        <li class="text-orange"><i class="fa-regular fa-envelope fs-5 pt-1"></i><span
+                                class="text-white mx-3 fs-5 fw-bold">Email</span></li>
+                        <li class="text-white offset-1">
+                            <span class=" fw-light mx-2 uline">hello@ketan.com</span>
+                        </li>
+                        <li class="text-orange"><i class="fa-solid fa-location-dot fs-5 pt-1"></i><span
+                                class="text-white mx-3 fs-5 fw-bold">Address</span></li>
+                        <li class="text-white  offset-1">
+                            <h6 class="mx-2 fs-6 fw-light">175 5th Ave Premium Area, New York, NY 10010, United States
+                            </h6>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" col-lg-3 col-sm-6">
+                    <h4 class="text-white fw-medium">Activities</h4>
+                    <hr>
+                    <ul class="text-white list-unstyled ">
+                        <li class="mb-3"> <span class="uline">Maths Olympiad</span></li>
+                        <li class="mb-3"> <span class="uline">Art Compitition</span></li>
+                        <li class="mb-3"> <span class="uline">English Novels</span></li>
+                        <li class="mb-3"> <span class="uline">Science Compitition</span></li>
+                        <li class="mb-3"> <span class="uline">Teachers Day</span></li>
+                        <li class="mb-3"> <span class="uline">World Kids day</span></li>
+                    </ul>
+                </div>
+                <div class="photo col-lg-3">
+                    <h4 class="text-white fw-medium">Photo Gallery</h4>
+                    <hr>
+                    <div class="gallery ">
+                        <div class="img overflow-hidden col-12">
+                            <img class="img-fluid img-h" src="./assest/img/blog-1.jpg">
+                            <span class="overlay"></span>
+                        </div>
+                        <div class="img overflow-hidden">
+                            <img class="img-fluid img-h" src="./assest/img/blog-2.jpg">
+                            <span class="overlay"></span>
+                        </div>
+                        <div class="img overflow-hidden">
+                            <img class="img-fluid img-h" src="./assest/img/blog-3.jpg">
+                            <span class="overlay"></span>
+                        </div>
+                        <div class="img overflow-hidden">
+                            <img class="img-fluid img-h" src="./assest/img/class-1.jpg">
+                            <span class="overlay"></span>
+                        </div>
+                        <div class="img overflow-hidden">
+                            <img class="img-fluid img-h" src="./assest/img/class-2.jpg">
+                            <span class="overlay"></span>
+                        </div>
+                        <div class="img overflow-hidden">
+                            <img class="img-fluid img-h" src="./assest/img/class-3.jpg">
+                            <span class="overlay"></span>
+                        </div>
+                        <div class="img overflow-hidden">
+                            <img class="img-fluid img-h" src="./assest/img/footer-gallery-1.jpg">
+                            <span class="overlay"></span>
+                        </div>
+                        <div class="img overflow-hidden">
+                            <img class="img-fluid img-h" src="./assest/img/footer-gallery-2.jpg">
+                            <span class="overlay"></span>
+                        </div>
+                        <div class="img overflow-hidden">
+                            <img class="img-fluid img-h" src="./assest/img/footer-gallery-4.jpg">
+                            <span class="overlay"></span>
+                        </div>
                     </div>
                 </div>
-                <h4 class="mt-5">Glims Bond</h4>
-                <span class="span1">Music Teacher</span>
             </div>
-                
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="teacher overflow-hidden position-relative ">
-                    <div class="design">
-                        <img src="./assest/img/teacher-2.jpg" alt="">
-                    </div>
-               <div class="social ">
-                <ul class="list-unstyled">
-                    <li class="d-inline-block"><a href="">
-                          <i class="fa-brands fa-facebook-f"></i>
-                    </a></li>
-                    <li class="d-inline-block"><a href=""> 
-                       <i class="fa-brands fa-twitter"></i>
-
-                    </a></li>
-                    <li class="d-inline-block"i><a href="">
-                   <i class="fa-brands fa-instagram"></i>
-
-                    </a></li>
-                    <li class="d-inline-block"><a href="">
-                       <i class="fa-brands fa-linkedin-in"></i>
-
-                    </a></li>
-                  </ul>
-               </div>
-            </div>
-            <h4 class="mt-5">Sherlock Bin</h4>
-                <span class="span1">Math Teacher</span>
         </div>
-               
-        <div class="col-lg-3 col-md-6 text-center">
-            <div class="teacher overflow-hidden position-relative ">
-                <div class="design">
-                    <img src="./assest/img/teacher-3.jpg" alt="">
+    </section>
+
+    <section class="footer-end bg-blue pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 ">
+                    <h6 class="text-white text-center m-3">Copyright @2023 Ketan. All Rights Reserved by <span
+                            style="color: red;">Akshay Hyalij</span></h6>
                 </div>
-           <div class="social ">
-            <ul class="list-unstyled">
-                <li class="d-inline-block"><a href="">
-                      <i class="fa-brands fa-facebook-f"></i>
-                </a></li>
-                <li class="d-inline-block"><a href=""> 
-                   <i class="fa-brands fa-twitter"></i>
-
-                </a></li>
-                <li class="d-inline-block"i><a href="">
-               <i class="fa-brands fa-instagram"></i>
-
-                </a></li>
-                <li class="d-inline-block"><a href="">
-                   <i class="fa-brands fa-linkedin-in"></i>
-
-                </a></li>
-              </ul>
-           </div>
-        </div>
-        <h4 class="mt-5">Priestly Herbart</h4>
-        <span class="span1">English Teacher</span>
-    </div>
-               
-    <div class="col-lg-3 col-md-6 text-center">
-        <div class="teacher overflow-hidden position-relative ">
-            <div class="design">
-                <img src="./assest/img/teacher-4.jpg" alt="">
-            </div>
-       <div class="social ">
-        <ul class="list-unstyled">
-            <li class="d-inline-block"><a href="">
-                  <i class="fa-brands fa-facebook-f"></i>
-            </a></li>
-            <li class="d-inline-block"><a href=""> 
-               <i class="fa-brands fa-twitter"></i>
-
-            </a></li>
-            <li class="d-inline-block"i><a href="">
-           <i class="fa-brands fa-instagram"></i>
-
-            </a></li>
-            <li class="d-inline-block"><a href="">
-               <i class="fa-brands fa-linkedin-in"></i>
-
-            </a></li>
-          </ul>
-       </div>
-    </div>
-    <h4 class="mt-5">Smith Broke</h4>
-    <span class="span1">Art Teacher</span>
-</div>
             </div>
         </div>
     </section>
 
 
-    <!-- Meet Section End -->
+    <!-- Footer Section End -->
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            centeredSlides: false,
+            spaceBetween: 10,
+            grabCursor: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".next",
+                prevEl: ".prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                600: {
+                    slidesPerView: 2,
+                },
+                1000: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+        let myButton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.documentElement.scrollTop > 100) {
+                myButton.style.display = "block";
+            }
+            else { myButton.style.display = "none"; }
+        }
+        function topFunction() {
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+
 </body>
 
 </html>
